@@ -18,4 +18,5 @@ def to_crackle_pop(input_val):
     return str(input_val)
 
 
-print("\n".join([to_crackle_pop(i) for i in range(1, 101)]))
+for i in range(1, 101):
+    print(to_crackle_pop(i))
