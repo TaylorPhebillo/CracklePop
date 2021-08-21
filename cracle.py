@@ -1,4 +1,4 @@
-def to_crackle_pop(inputVal):
+def to_crackle_pop(input_val):
     """Return the CracklePop transformation of an integer
     If the number is divisible by 3, return Crackle instead of the number.
     If it's divisible by 5, return Pop.
@@ -9,13 +9,13 @@ def to_crackle_pop(inputVal):
     # but I can't find one that is clearer code than
     # the naive way. So, optimizing for clarity over
     # efficiency or configurability.
-    if (inputVal % (3 * 5)) == 0:
+    if (input_val % (3 * 5)) == 0:
         return "CracklePop"
-    if (inputVal % 3) == 0:
+    if (input_val % 3) == 0:
         return "Crackle"
-    if (inputVal % 5) == 0:
+    if (input_val % 5) == 0:
         return "Pop"
-    return str(inputVal)
+    return str(input_val)
 
 
 print("\n".join([to_crackle_pop(i) for i in range(1, 101)]))
